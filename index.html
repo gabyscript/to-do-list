@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body id="app-body">
+    <header class="header-section" id="header-section">
+        <div class="title-div" id="title-div">
+            <h1 class="app-title">
+                Organizapp
+            </h1>
+            <div class="app-subtitle-effect">
+                <h2 class="app-subtitle">Organiza tu vida</h2>
+            </div>            
+        </div>       
+    </header>
+    <section class="main-section" id="main-section"></main>
+        <div class="agregar-div">
+            <h3 class="input-title">
+                Agregue sus tareas
+            </h3>
+            <div class="input-div">
+                <input type="text" id="tareas-input">
+                <button class='button' id="agregar-button">Agregar</button>
+            </div>                
+        </div>
+        <div class="tareas-div">
+            <div class="pendientes-div">
+                <div class="pendientes-info-div" >
+                    <h3 class="pendientes-title">Cantidad de tareas pendientes: <span id="cantidad-pendientes"></span></h3>   
+                </div>
+                <div class="variables-tareas">
+                    <div class="id-title">
+                        <h3>ID</h3>
+                    </div>
+                    <div class="tarea-title">
+                        <h3 >Tareas</h3>
+                    </div>                  
+                </div>
+                <div id="tareas-div-div">
+
+                </div>              
+            </div>
+            <div class="realizadas-div">
+                <div class="realizadas-info-div">
+                    <h3 class="realizadas-title"> Cantidad de tareas realizadas: <span id="cantidad-realizadas"></span></h3>
+                </div>  
+                <div class="variables-tareas">
+                    <div class="id-title">
+                        <h3>ID</h3>
+                    </div>
+                    <div class="tarea-title">
+                        <h3>Tareas</h3>
+                    </div>                  
+                </div>
+                <div id="tareas-realizadas-div">
+
+                </div>
+                            
+            </div>
+        </div>
+        
+    </section>
+    <footer></footer>
+
+    <script src="assets/script/main.js"></script>
+</body>
+</html>

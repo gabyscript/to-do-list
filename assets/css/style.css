@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color=white;
+}
+
+
+/* Header section*/
+
+.header-section {
+    width: 100vw;
+    height: 20vh;
+    background: linear-gradient(33deg,#f8ab46 , #e8c982c8);
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom:2px solid rgba(0,0,0,0.20);
+    color: black;
+}
+
+.title-div {
+    width: 18vw;
+    height: 18vh;
+    padding-left: 8vw;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Anton', sans-serif;
+}
+
+.app-title, .app-subtitle {
+    font-weight: 100;
+    
+}
+
+.app-subtitle-effect {    
+    width: 18ch;
+    animation: typing 4s steps(21) infinite , 
+    blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    30% {
+        width: 20ch;
+    }
+    60% {
+        width: 20ch;
+    }
+    75% {
+        width: 10ch;
+    }
+    85% {
+        width: 00ch;
+    }
+    90% {
+        width: 0ch;
+    }
+    100% {
+        width: 0ch;
+    }
+   
+}
+
+@keyframes blink{
+    50% {
+        border-color: transparent;
+    }
+}
+
+.darkmode-div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10vw;
+}
+
+.modooscuro-button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.25), 1px 1px 1px rgba(0,0,0,0.20);
+    border-radius: 50%;
+}
+
+.modooscuro-button:hover {
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.45), 1px 1px 1px rgba(0,0,0,0.40);
+}
+
+/* Seccion Principal*/
+
+/* Secciones de los inputs*/
+
+.main-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6dab7;
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-around;
+    align-items: center; 
+    font-family: 'Playfair Display', serif;    
+}
+
+.agregar-div {
+    width: 95vw;
+    height: 15vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+
+.input-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+#tareas-input {
+    width: 80vw;
+    height: 4vh;
+    padding-left: 1vw;
+}
+
+#tareas-input:hover {
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.45), 1px 1px 1px rgba(0,0,0,0.40);
+}
+
+.button {
+    width: 10vw;
+    height: 4vh;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.25), 1px 1px 1px rgba(0,0,0,0.20);
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    font-size: 1.2vw;
+    background: linear-gradient(33deg,#f8ab46 , #e8c982c8);
+}
+
+.button:hover {
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.45), 1px 1px 1px rgba(0,0,0,0.40);
+    letter-spacing: 1px;
+}
+
+/* Secciones de las tareas*/
+
+.tareas-div {
+    width: 95vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.pendientes-div {
+    width: 45vw;
+    height: 78vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 3%;
+    background: rgba(255, 255, 255, 0.51);
+    box-shadow: 0 0 6px 0 rgba(29, 29, 29, 0.203);
+    
+}
+
+.pendientes-info-div, .realizadas-info-div {
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.variables-tareas {
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#tareas-div-div, #tareas-realizadas-div {
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.tarea-completa {
+    text-decoration: line-through;
+    font-style: italic;
+   
+}
+
+.template-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1vw;
+}
+
+
+.id-title, .id-div {
+    width: 10vw;
+    justify-content: center;
+    font-size: 1.2vw;
+    
+}
+
+.tarea-title, .nombretarea-div {
+    width: 30vw;
+    justify-content: center;
+    font-size: 1.2vw;   
+}
+
+.realizadas-div {
+    width: 45vw;
+    height: 78vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 3%;
+    background: rgba(255, 255, 255, 0.51);
+    box-shadow: 0 0 6px 0 rgba(29, 29, 29, 0.203);
+}
+
+.pendientes-title, .realizadas-title {
+    font-size: 1.5vw;
+    text-align: center;
+    display: block;
+    width: 30vw;
+}
